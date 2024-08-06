@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você está participando de um curso de IA e recebe um projeto que envolve o uso de aprendizado de máquina para análise de dados. Qual é o seu primeiro passo?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Estudar os conceitos básicos de aprendizado de máquina e os algoritmos mais comuns para entender como aplicar ao seu projeto.",
+                afirmacao: "Optou por começar com uma base sólida, estudando os conceitos fundamentais para aplicar corretamente as técnicas de aprendizado de máquina."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Começar a programar diretamente, utilizando bibliotecas e frameworks de IA para implementar o modelo o mais rápido possível.",
+                afirmacao: "Prefere aprender na prática e ir ajustando o modelo conforme necessário, com base na experimentação direta."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Você está desenvolvendo um chatbot para um projeto escolar. Qual aspecto do design do chatbot você considera mais importante?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Focar na criação de respostas precisas e informativas, garantindo que o chatbot possa responder a uma ampla gama de perguntas.",
+                afirmacao: "Prioriza a precisão e a abrangência das respostas do chatbot para garantir que ele seja útil e eficaz."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Concentrar-se em tornar a interação mais natural e amigável, para que os usuários tenham uma experiência mais agradável.",
+                afirmacao: "Valoriza a experiência do usuário e a fluidez das conversas para tornar o chatbot mais acessível e envolvente."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você descobre uma nova ferramenta de IA que promete otimizar tarefas repetitivas no seu trabalho escolar. Como você decide usá-la?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Integra a ferramenta ao seu fluxo de trabalho para automatizar tarefas e ganhar mais tempo para se concentrar em outras atividades importantes.",
+                afirmacao: "Aproveita a automação para melhorar a eficiência e liberar tempo para tarefas mais complexas."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Decide usar a ferramenta apenas ocasionalmente para tarefas específicas, garantindo que você continue desenvolvendo suas próprias habilidades e não dependa totalmente da tecnologia.",
+                afirmacao: "Mantém um equilíbrio entre a utilização de ferramentas de IA e o desenvolvimento pessoal de habilidades práticas."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Durante uma aula sobre IA, você discute o impacto da IA na privacidade pessoal. Qual ponto você considera mais relevante para a discussão?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "A necessidade de regulamentações mais rigorosas para garantir que os dados pessoais sejam protegidos e utilizados de forma ética.",
+                afirmacao: "Enfatiza a importância de políticas e regulamentações para proteger a privacidade e garantir o uso ético dos dados."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "A importância de educar os usuários sobre como gerenciar suas configurações de privacidade e compreender como seus dados são coletados e utilizados.",
+                afirmacao: "Valoriza a educação e a conscientização dos usuários para que eles possam tomar decisões informadas sobre sua privacidade."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você tem a oportunidade de participar de uma hackathon que utiliza IA para resolver problemas ambientais. Qual projeto você escolheria desenvolver?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Desenvolver um sistema de monitoramento de qualidade do ar usando sensores e IA para detectar e prever níveis de poluição.",
+                afirmacao: "Foca em um projeto que usa IA para monitorar e prever a qualidade do ar, contribuindo para a proteção ambiental."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Criar uma aplicação que usa IA para otimizar o uso de recursos hídricos em áreas agrícolas, ajudando a conservar água e melhorar a eficiência.",
+                afirmacao: "Escolhe um projeto que utiliza IA para melhorar a gestão de recursos hídricos, promovendo a sustentabilidade na agricultura."
             }
         ]
     },
