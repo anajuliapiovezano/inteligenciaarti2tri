@@ -1,0 +1,1 @@
+# inteligenciaarti2tri
